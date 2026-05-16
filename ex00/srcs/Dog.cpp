@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Dog.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: enoshahi < enoshahi@student.42abudhabi.    +#+  +:+       +#+        */
+/*   By: enoshahi <enoshahi@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/16 04:19:56 by enoshahi          #+#    #+#             */
-/*   Updated: 2026/05/16 04:36:41 by enoshahi         ###   ########.fr       */
+/*   Updated: 2026/05/16 16:04:22 by enoshahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,13 @@
 Dog::Dog(void)
 {
 	this->Animal::type = "Dog";
-	std::cout << "Dog default constructor called" << std::endl;
+	std::cout << CYAN << "Dog default constructor called" << RESET << std::endl;
 }
 
 Dog::Dog(const Dog &dog_) : Animal(dog_)
 {
 	this->Animal::type = dog_.type;
-	std::cout << "Dog copy constructor called" << std::endl;
+	std::cout << CYAN << "Dog copy constructor called" << RESET << std::endl;
 }
 
 Dog &Dog::operator=(Dog const &dog)
@@ -33,10 +33,10 @@ Dog &Dog::operator=(Dog const &dog)
 
 Dog::~Dog()
 {
-	std::cout << "Dog default destructor called" << std::endl;
+	std::cout << CYAN << "Dog default destructor called" << RESET << std::endl;
 }
 
 void	Dog::makeSound(void) const
 {
-	std::cout << "Bark bark." << std::endl;
+	std::cout << RED << "*Bark bark*" << RESET << std::endl;
 }

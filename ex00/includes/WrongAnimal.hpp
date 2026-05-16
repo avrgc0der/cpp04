@@ -3,16 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   WrongAnimal.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: enoshahi < enoshahi@student.42abudhabi.    +#+  +:+       +#+        */
+/*   By: enoshahi <enoshahi@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/16 03:54:14 by enoshahi          #+#    #+#             */
-/*   Updated: 2026/05/16 04:34:06 by enoshahi         ###   ########.fr       */
+/*   Updated: 2026/05/16 14:30:57 by enoshahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef WRONG_ANIMAL_H
 #define WRONG_ANIMAL_H
 #include <iostream>
+#define RESET "\e[0m"
+#define RED "\e[31m"
+#define YELLOW "\e[33m"
+#define CYAN "\e[36m"
 
 class	WrongAnimal
 {

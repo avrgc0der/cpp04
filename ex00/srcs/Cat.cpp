@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cat.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: enoshahi < enoshahi@student.42abudhabi.    +#+  +:+       +#+        */
+/*   By: enoshahi <enoshahi@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/16 04:15:46 by enoshahi          #+#    #+#             */
-/*   Updated: 2026/05/16 04:36:15 by enoshahi         ###   ########.fr       */
+/*   Updated: 2026/05/16 16:04:17 by enoshahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,12 @@
 Cat::Cat(void)
 {
 	this->Animal::type = "Cat";
-	std::cout << "Cat default constructor called" << std::endl;
+	std::cout << CYAN << "Cat default constructor called" << RESET << std::endl;
 }
 
 Cat::Cat(const Cat &cat_) : Animal(cat_)
 {
-	std::cout << "Cat copy constructor called" << std::endl;
+	std::cout << CYAN << "Cat copy constructor called" << RESET << std::endl;
 }
 
 Cat	&Cat::operator=(Cat const &cat)
@@ -32,10 +32,10 @@ Cat	&Cat::operator=(Cat const &cat)
 
 Cat::~Cat()
 {
-	std::cout << "Cat default destructor called" << std::endl;
+	std::cout << CYAN << "Cat default destructor called" << RESET << std::endl;
 }
 
 void	Cat::makeSound(void) const
 {
-	std::cout << "Meow meow." << std::endl;
+	std::cout << RED << "*Meow meow*" << RESET << std::endl;
 }
