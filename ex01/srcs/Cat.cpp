@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cat.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: enoshahi < enoshahi@student.42abudhabi.    +#+  +:+       +#+        */
+/*   By: enoshahi <enoshahi@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/16 04:15:46 by enoshahi          #+#    #+#             */
-/*   Updated: 2026/05/16 04:49:49 by enoshahi         ###   ########.fr       */
+/*   Updated: 2026/05/16 16:14:52 by enoshahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,14 @@ Cat::Cat(void)
 {
 	this->Animal::type = "Cat";
 	this->brain = new Brain();
-	std::cout << "Cat default constructor called" << std::endl;
+	std::cout << CYAN << "Cat default constructor called" << std::endl;
 }
 
 Cat::Cat(const Cat &cat_) : Animal(cat_)
 {
 	this->Animal::type = cat_.type;
 	this->brain = new Brain(*cat_.brain);
-	std::cout << "Cat copy constructor called" << std::endl;
+	std::cout << CYAN << "Cat copy constructor called" << std::endl;
 }
 
 Cat	&Cat::operator=(Cat const &cat)
@@ -39,7 +39,7 @@ Cat	&Cat::operator=(Cat const &cat)
 Cat::~Cat()
 {
 	delete this->brain;
-	std::cout << "Cat default destructor called" << std::endl;
+	std::cout << CYAN << "Cat default destructor called" << std::endl;
 }
 
 void	Cat::makeSound(void) const

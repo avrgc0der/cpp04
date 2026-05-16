@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Animal.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: enoshahi < enoshahi@student.42abudhabi.    +#+  +:+       +#+        */
+/*   By: enoshahi <enoshahi@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/15 15:49:13 by enoshahi          #+#    #+#             */
-/*   Updated: 2026/05/16 04:47:55 by enoshahi         ###   ########.fr       */
+/*   Updated: 2026/05/16 16:14:37 by enoshahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,13 @@
 Animal::Animal()
 {
 	this->Animal::type = "Animal";
-	std::cout << "Animal default constructor called" << std::endl;
+	std::cout << CYAN << "Animal default constructor called" << std::endl;
 }
 
 Animal::Animal(const Animal &animal)
 {
 	this->type = animal.type;
-	std::cout << "Animal copy constructor called" << std::endl;
+	std::cout << CYAN << "Animal copy constructor called" << std::endl;
 }
 Animal	&Animal::operator=(Animal const &animal)
 {
@@ -32,7 +32,7 @@ Animal	&Animal::operator=(Animal const &animal)
 
 Animal::~Animal()
 {
-	std::cout << "Default animal destructor called" << std::endl;
+	std::cout << CYAN << "Default animal destructor called" << std::endl;
 }
 
 void	Animal::makeSound( void ) const

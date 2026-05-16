@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Animal.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: enoshahi < enoshahi@student.42abudhabi.    +#+  +:+       +#+        */
+/*   By: enoshahi <enoshahi@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/11 16:22:59 by enoshahi          #+#    #+#             */
-/*   Updated: 2026/05/16 05:01:27 by enoshahi         ###   ########.fr       */
+/*   Updated: 2026/05/16 14:38:41 by enoshahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
