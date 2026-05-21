@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cat.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: enoshahi <enoshahi@student.42abudhabi.a    +#+  +:+       +#+        */
+/*   By: enoshahi < enoshahi@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/16 04:15:46 by enoshahi          #+#    #+#             */
-/*   Updated: 2026/05/16 16:14:52 by enoshahi         ###   ########.fr       */
+/*   Updated: 2026/05/18 15:42:24 by enoshahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ Cat::Cat(const Cat &cat_) : Animal(cat_)
 
 Cat	&Cat::operator=(Cat const &cat)
 {
+	std::cout << CYAN << "Cat copy assignment constructor called" << std::endl;
 	if (this != &cat)
 	{
 		this->type = cat.type;
